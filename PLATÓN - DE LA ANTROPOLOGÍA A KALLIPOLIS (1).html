@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinculación: Mito de los Metales – Carro Alado – Alma Tripartita – Kallipolis</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    color: #1a202c;
+    padding: 30px 15px 50px;
+    line-height: 1.45;
+  }
+  h1 {
+    text-align: center;
+    color: #1a365d;
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 40px;
+    font-size: 1.05rem;
+  }
+
+  /* Contenedor principal */
+  .mapa {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+  }
+
+  /* Columnas laterales */
+  .columna {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  /* Nodos */
+  .nodo {
+    background: white;
+    border-radius: 14px;
+    padding: 18px 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-left: 6px solid;
+  }
+  .nodo h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nodo p {
+    font-size: 0.9rem;
+    color: #4a5568;
+  }
+  .nodo ul {
+    margin-top: 8px;
+    padding-left: 18px;
+    font-size: 0.88rem;
+    color: #2d3748;
+  }
+  .nodo li {
+    margin-bottom: 4px;
+  }
+
+  /* Colores */
+  .metales { border-color: #d69e2e; }
+  .metales h3 { color: #b7791f; }
+  .carro { border-color: #805ad5; }
+  .carro h3 { color: #6b46c1; }
+  .alma { border-color: #3182ce; }
+  .alma h3 { color: #2b6cb0; }
+  .ciudad { border-color: #38a169; }
+  .ciudad h3 { color: #2f855a; }
+
+  /* Centro */
+  .centro {
+    background: linear-gradient(145deg, #1a365d, #2c5282);
+    color: white;
+    border-radius: 18px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(26,54,93,0.35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .centro h2 {
+    font-size: 1.35rem;
+    margin-bottom: 14px;
+    line-height: 1.3;
+  }
+  .centro p {
+    font-size: 0.95rem;
+    opacity: 0.95;
+    margin-bottom: 18px;
+  }
+  .correspondencias {
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .correspondencias div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .correspondencias div:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .oro { color: #f6e05e; font-weight: 600; }
+  .plata { color: #e2e8f0; font-weight: 600; }
+  .bronce { color: #ed8936; font-weight: 600; }
+
+  /* Flechas visuales */
+  .flecha {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #718096;
+    margin: 8px 0;
+  }
+
+  /* Leyenda inferior */
+  .leyenda {
+    max-width: 1100px;
+    margin: 45px auto 0;
+    background: white;
+    border-radius: 14px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+  .leyenda h3 {
+    color: #1a365d;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+  }
+  .leyenda p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 850px) {
+    .mapa {
+      grid-template-columns: 1fr;
+    }
+    .flecha {
+      transform: rotate(90deg);
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Vinculación de los cuatro pilares</h1>
+  <p class="subtitle">
+    Mito de los Metales · Mito del Carro Alado · Alma Tripartita · Kallipolis<br>
+    <strong>La República</strong> y <strong>Fedro</strong> de Platón
+  </p>
+
+  <div class="mapa">
+    <!-- Columna izquierda -->
+    <div class="columna">
+      <div class="nodo metales">
+        <h3>🪙 Mito de los Metales</h3>
+        <p><em>(República III – La “noble mentira”)</em></p>
+        <ul>
+          <li><strong class="oro">Oro</strong> → gobernantes</li>
+          <li><strong class="plata">Plata</strong> → guardianes/auxiliares</li>
+          <li><strong class="bronce">Bronce/Hierro</strong> → productores</li>
+        </ul>
+        <p style="margin-top:10px; font-size:0.85rem;">
+          El dios mezcla diferentes metales en las almas al nacer. Justifica la división de clases como natural y divina.
+        </p>
+      </div>
+
+      <div class="flecha">↕</div>
+
+      <div class="nodo carro">
+        <h3>🦅 Mito del Carro Alado</h3>
+        <p><em>(Fedro 246a–254e)</em></p>
+        <ul>
+          <li><strong>Auriga</strong> = Razón</li>
+          <li><strong>Caballo noble</strong> = Parte irascible (ánimo)</li>
+          <li><strong>Caballo indócil</strong> = Parte apetitiva</li>
+        </ul>
+        <p style="margin-top:10px; font-size:0.85rem;">
+          La misma estructura tripartita del alma aparece como un carro alado que intenta ascender al mundo de las Formas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Centro -->
+    <div class="centro">
+      <h2>Estructura<br>Tripartita<br>Fundamental</h2>
+      <p>
+        Platón establece una <strong>analogía perfecta</strong> entre el alma individual y la ciudad ideal. La justicia es la misma en ambos: cada parte realiza su función propia en armonía.
+      </p>
+
+      <div class="correspondencias">
+        <div>
+          <span>Razón / Auriga / Oro</span>
+          <span>→</span>
+          <span>Filósofos-Reyes</span>
+        </div>
+        <div>
+          <span>Ánimo / Caballo noble / Plata</span>
+          <span>→</span>
+          <span>Guardianes-Auxiliares</span>
+        </div>
+        <div>
+          <span>Apetitos / Caballo indócil / Bronce</span>
+          <span>→</span>
+          <span>Productores</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="columna">
+      <div class="nodo alma">
+        <h3>🧠 División Tripartita del Alma</h3>
+        <p><em>(República IV)</em></p>
+        <ul>
+          <li><strong>Logistikón</strong> – Parte racional (razón, cálculo)</li>
+          <li><strong>Thymoeidés</strong> – Parte irascible (ánimo, coraje, honor)</li>
+          <li><strong>Epithymetikón</strong> – Parte apetitiva (deseos, placeres, necesidades)</li>
+        </ul>
+        <p style="margin-top:10px; font-size:0.85rem;">
+          La justicia en el alma consiste en que la razón gobierne, ayudada por el ánimo, sobre los apetitos.
+        </p>
+      </div>
+
+      <div class="flecha">↕</div>
+
+      <div class="nodo ciudad">
+        <h3>🏛️ División Tripartita de Kallipolis</h3>
+        <p><em>(República II–IV)</em></p>
+        <ul>
+          <li><strong>Gobernantes</strong> (filósofos-reyes)</li>
+          <li><strong>Guardianes / Auxiliares</strong> (guerreros)</li>
+          <li><strong>Productores</strong> (artesanos, agricultores, comerciantes)</li>
+        </ul>
+        <p style="margin-top:10px; font-size:0.85rem;">
+          La justicia en la ciudad consiste en que cada clase realice su función propia sin interferir en las demás.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="leyenda">
+    <h3>¿Cómo se vinculan todos estos elementos?</h3>
+    <p>
+      Platón construye un sistema coherente y jerárquico. La <strong>división tripartita del alma</strong> es el núcleo psicológico. El <strong>mito del carro alado</strong> (Fedro) ilustra dinámicamente esa misma división y su lucha por elevarse hacia la verdad. 
+    </p>
+    <p>
+      La <strong>división tripartita de Kallipolis</strong> es la proyección política de la estructura del alma: la ciudad justa es el alma justa “escrita en letras grandes”. 
+    </p>
+    <p>
+      Finalmente, el <strong>mito de los metales</strong> (la noble mentira) proporciona la justificación mítico-religiosa de esta división de clases, presentándola como una diferencia natural implantada por los dioses en el momento del nacimiento. Así, psicología, política y mito quedan perfectamente integrados.
+    </p>
+  </div>
+</body>
+</html>

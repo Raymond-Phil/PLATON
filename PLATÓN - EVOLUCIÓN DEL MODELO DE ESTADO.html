@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa Conceptual: Evolución del Pensamiento Político de Platón</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f0f4f8;
+    color: #1e293b;
+    padding: 30px 20px;
+    line-height: 1.45;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #0f172a;
+  }
+  .subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+
+  /* Contenedor principal de la evolución */
+  .evolution {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    flex-wrap: wrap;
+  }
+
+  /* Columnas de cada obra */
+  .work {
+    flex: 1;
+    min-width: 300px;
+    max-width: 420px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .work-header {
+    padding: 18px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: white;
+  }
+
+  .republic .work-header { background: #1e40af; }
+  .laws .work-header { background: #047857; }
+
+  .work-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 0.92rem;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #0f172a;
+  }
+
+  .card p {
+    color: #334155;
+    font-size: 0.88rem;
+  }
+
+  /* Flecha central de evolución */
+  .arrow-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    min-width: 140px;
+  }
+
+  .arrow {
+    font-size: 2.8rem;
+    color: #6366f1;
+    line-height: 1;
+  }
+
+  .arrow-label {
+    background: #6366f1;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-top: 8px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* Síntesis final */
+  .synthesis {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+
+  .synthesis-header {
+    background: #7c3aed;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  .synthesis-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .synth-card {
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .synth-card h3 {
+    color: #5b21b6;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  .synth-card p {
+    font-size: 0.9rem;
+    color: #4c1d95;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .evolution {
+      flex-direction: column;
+      align-items: center;
+    }
+    .arrow-box {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      transform: rotate(90deg);
+    }
+    .synthesis-body {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pensamiento Político de Platón</h1>
+<p class="subtitle">Evolución del idealismo utópico al realismo institucional</p>
+
+<div class="evolution">
+
+  <!-- LA REPÚBLICA -->
+  <div class="work republic">
+    <div class="work-header">
+      A. La República<br>
+      <small style="font-weight:500; opacity:0.9">(Kallipolis – Estado ideal)</small>
+    </div>
+    <div class="work-body">
+      <div class="card">
+        <h3>Estructura Social</h3>
+        <p>División tripartita según el alma + Paideia:<br>
+        • Oro → Filósofos<br>
+        • Plata → Guardianes<br>
+        • Bronce → Productores</p>
+      </div>
+      <div class="card">
+        <h3>Régimen de Vida</h3>
+        <p>Abolición de la propiedad privada y de la familia entre gobernantes y guardianes (comunismo de los guardianes).</p>
+      </div>
+      <div class="card">
+        <h3>Gobierno</h3>
+        <p><strong>Sofocracia</strong> (Filósofo-Rey).<br>
+        Sin leyes rígidas: la virtud del gobernante sustituye a la ley escrita.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLECHA DE EVOLUCIÓN -->
+  <div class="arrow-box">
+    <div class="arrow">→</div>
+    <div class="arrow-label">Evolución<br>Idealismo → Realismo</div>
+  </div>
+
+  <!-- LAS LEYES -->
+  <div class="work laws">
+    <div class="work-header">
+      B. Las Leyes<br>
+      <small style="font-weight:500; opacity:0.9">(Magnesia – Estado viable)</small>
+    </div>
+    <div class="work-body">
+      <div class="card">
+        <h3>Estructura Social</h3>
+        <p>4 clases según censo patrimonial.<br>
+        5.040 ciudadanos (kleros).<br>
+        Propiedad y familia permitidas, pero con fuerte control estatal.</p>
+      </div>
+      <div class="card">
+        <h3>Gobierno</h3>
+        <p><strong>Régimen mixto</strong>.<br>
+        Supremacía de la Ley: los gobernantes son “servidores de la ley”.</p>
+      </div>
+      <div class="card">
+        <h3>Instituciones</h3>
+        <p>Consejo Nocturno, Guardianes de la Ley (37), Consejo de los 360, Asamblea y Tribunales.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- SÍNTESIS EVOLUTIVA -->
+<div class="synthesis">
+  <div class="synthesis-header">3. Síntesis Evolutiva</div>
+  <div class="synthesis-body">
+    <div class="synth-card">
+      <h3>Idealismo → Pragmatismo</h3>
+      <p>De un Estado perfecto pensado para hombres perfectos a un Estado viable que tiene en cuenta las limitaciones humanas.</p>
+    </div>
+    <div class="synth-card">
+      <h3>Hombres → Instituciones</h3>
+      <p>La justicia deja de depender principalmente de la educación y virtud del gobernante y pasa a sustentarse en la estabilidad del marco legal e institucional.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

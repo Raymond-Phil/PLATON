@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual: Kibutz ↔ Educación en La República de Platón</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    color: #222;
+    padding: 30px 15px;
+    line-height: 1.5;
+  }
+  h1 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+  }
+  .mapa {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 25px;
+    align-items: start;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .nodo {
+    background: white;
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 6px solid;
+    transition: transform 0.2s;
+  }
+  .nodo:hover { transform: translateY(-3px); }
+  .nodo h3 {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nodo p { font-size: 0.92rem; color: #4a5568; }
+  .platón { border-color: #3182ce; }
+  .platón h3 { color: #2b6cb0; }
+  .kibutz { border-color: #38a169; }
+  .kibutz h3 { color: #2f855a; }
+  .comun { border-color: #d69e2e; background: #fffbeb; }
+  .comun h3 { color: #b7791f; }
+  .centro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .titulo-centro {
+    background: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(26,54,93,0.3);
+  }
+  .flecha {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #718096;
+    font-weight: bold;
+  }
+  .leyenda {
+    max-width: 1100px;
+    margin: 50px auto 20px;
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+  .leyenda h2 { color: #1a365d; margin-bottom: 15px; font-size: 1.3rem; }
+  .leyenda ul { padding-left: 22px; }
+  .leyenda li { margin-bottom: 8px; }
+  @media (max-width: 800px) {
+    .mapa { grid-template-columns: 1fr; }
+    .flecha { transform: rotate(90deg); margin: 10px 0; }
+  }
+</style>
+</head>
+<body>
+  <h1>Mapa Conceptual</h1>
+  <p class="subtitle">Similitudes entre la educación de los niños en los <strong>Kibutz israelíes</strong> y en <strong>La República de Platón</strong> (sofocracia)</p>
+
+  <div class="mapa">
+    <!-- Columna Platón -->
+    <div class="columna">
+      <div class="nodo platón">
+        <h3>🏛️ Platón – Guardianes</h3>
+        <p>Hijos comunes. Ningún padre conoce a su hijo biológico. Crianza en nurseries estatales por nodrizas oficiales.</p>
+      </div>
+      <div class="nodo platón">
+        <h3>🎯 Objetivo</h3>
+        <p>Formar guardianes virtuosos cuya lealtad principal sea a la justicia y al bien de la polis.</p>
+      </div>
+      <div class="nodo platón">
+        <h3>👨‍👩‍👧‍👦 Familia</h3>
+        <p>Abolición de la familia privada para la clase guardiana (comunidad de mujeres e hijos).</p>
+      </div>
+      <div class="nodo platón">
+        <h3>📚 Educación</h3>
+        <p>Control total del Estado. Música, gimnasia, matemáticas y dialéctica orientadas a la armonía del alma y de la ciudad.</p>
+      </div>
+    </div>
+
+    <!-- Centro -->
+    <div class="centro">
+      <div class="titulo-centro">
+        SIMILITUDES<br>CENTRALES
+      </div>
+      <div class="flecha">⟷</div>
+      
+      <div class="nodo comun">
+        <h3>1. Crianza comunitaria</h3>
+        <p>Los niños pertenecen primero a la comunidad/Estado, no a los padres biológicos.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>2. Comunidad como “padre colectivo”</h3>
+        <p>La responsabilidad educativa y material recae en el colectivo.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>3. Formación del “ciudadano ideal”</h3>
+        <p>Crear un tipo de persona subordinada al bien común (“hombre nuevo” / guardianes justos).</p>
+      </div>
+      <div class="nodo comun">
+        <h3>4. Debilitamiento de la familia nuclear</h3>
+        <p>Para evitar nepotismo, favoritismo e intereses privados.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>5. Educación para el colectivo</h3>
+        <p>Valores de igualdad, cooperación y lealtad grupal por encima del individualismo.</p>
+      </div>
+    </div>
+
+    <!-- Columna Kibutz -->
+    <div class="columna">
+      <div class="nodo kibutz">
+        <h3>🏡 Kibutz clásico</h3>
+        <p>Niños viven en casas de niños (batei yeladim). Cuidados por metaplot. Visitas limitadas a los padres.</p>
+      </div>
+      <div class="nodo kibutz">
+        <h3>🎯 Objetivo</h3>
+        <p>Crear el “hombre nuevo” de una sociedad igualitaria, cooperativa y sin clases.</p>
+      </div>
+      <div class="nodo kibutz">
+        <h3>👨‍👩‍👧‍👦 Familia</h3>
+        <p>Familia nuclear debilitada. La comunidad asume el rol principal de crianza y socialización.</p>
+      </div>
+      <div class="nodo kibutz">
+        <h3>📚 Educación</h3>
+        <p>Colectiva, no selectiva, ligada al trabajo y a la vida del kibutz. Fuerte peso del grupo de pares.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="leyenda">
+    <h2>Notas aclaratorias</h2>
+    <ul>
+      <li>En Platón la medida es <strong>radical y restringida</strong> a la clase de los guardianes (con elementos eugenésicos).</li>
+      <li>En el kibutz se aplicó de forma más <strong>igualitaria y democrática</strong> a toda la comunidad (aunque el modelo de casas de niños fue abandonado progresivamente a partir de los años 70-90).</li>
+      <li>Ambos sistemas parten de la premisa de que la familia privada puede ser un obstáculo para la justicia y la solidaridad colectiva.</li>
+      <li>La conexión no es solo coincidencia: el kibutz se inscribe en la larga tradición de utopías comunales que dialogan con modelos antiguos como el platónico.</li>
+    </ul>
+  </div>
+</body>
+</html>

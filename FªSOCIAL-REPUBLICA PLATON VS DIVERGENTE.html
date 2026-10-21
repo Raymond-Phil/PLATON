@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mapa Conceptual: Divergente ↔ República de Platón</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+    color: #1a202c;
+    padding: 30px 15px;
+    line-height: 1.5;
+  }
+  h1 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 8px;
+    font-size: 1.85rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+  }
+  .mapa {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .columna {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .nodo {
+    background: white;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border-left: 6px solid;
+    transition: transform 0.2s;
+  }
+  .nodo:hover { transform: translateY(-3px); }
+  .nodo h3 {
+    font-size: 1.02rem;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .nodo p { font-size: 0.9rem; color: #4a5568; }
+  .platon { border-color: #3182ce; }
+  .platon h3 { color: #2b6cb0; }
+  .divergente { border-color: #c53030; }
+  .divergente h3 { color: #c53030; }
+  .comun { border-color: #d69e2e; background: #fffbeb; }
+  .comun h3 { color: #b7791f; }
+  .centro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+  }
+  .titulo-centro {
+    background: linear-gradient(135deg, #1a365d, #2c5282);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(26,54,93,0.3);
+  }
+  .flecha {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #718096;
+    font-weight: bold;
+  }
+  .leyenda {
+    max-width: 1150px;
+    margin: 45px auto 15px;
+    background: white;
+    border-radius: 14px;
+    padding: 22px 25px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  }
+  .leyenda h2 { color: #1a365d; margin-bottom: 12px; font-size: 1.25rem; }
+  .leyenda ul { padding-left: 20px; }
+  .leyenda li { margin-bottom: 7px; font-size: 0.95rem; }
+  @media (max-width: 850px) {
+    .mapa { grid-template-columns: 1fr; }
+    .flecha { transform: rotate(90deg); margin: 8px 0; }
+  }
+</style>
+</head>
+<body>
+  <h1>Mapa Conceptual</h1>
+  <p class="subtitle">
+    Organización social en <strong>Divergente</strong> (libros y películas) ↔ <strong>La República</strong> de Platón
+  </p>
+
+  <div class="mapa">
+    <!-- Columna Platón -->
+    <div class="columna">
+      <div class="nodo platon">
+        <h3>🏛️ Platón – 3 clases</h3>
+        <p><strong>Filósofos-reyes</strong> (oro/razón – sabiduría)<br>
+        <strong>Guardianes/Auxiliares</strong> (plata/ánimo – coraje)<br>
+        <strong>Productores</strong> (bronce/apetitos – temperancia)</p>
+      </div>
+      <div class="nodo platon">
+        <h3>🧪 Selección</h3>
+        <p>Mito de los metales + educación y pruebas desde la infancia. La naturaleza determina el lugar.</p>
+      </div>
+      <div class="nodo platon">
+        <h3>⚖️ Justicia</h3>
+        <p>Cada clase hace “lo suyo” sin interferir. Armonía del alma y de la polis.</p>
+      </div>
+      <div class="nodo platon">
+        <h3>👑 Gobierno</h3>
+        <p>Los filósofos-reyes (los más sabios) deben gobernar. Los guardianes protegen.</p>
+      </div>
+      <div class="nodo platon">
+        <h3>⚠️ Amenaza</h3>
+        <p>Las naturalezas “mixtas” o desordenadas ponen en peligro el equilibrio.</p>
+      </div>
+    </div>
+
+    <!-- Centro -->
+    <div class="centro">
+      <div class="titulo-centro">
+        SIMILITUDES<br>CENTRALES
+      </div>
+      <div class="flecha">⟷</div>
+
+      <div class="nodo comun">
+        <h3>1. Sociedad dividida por virtudes/aptitudes</h3>
+        <p>La población se organiza en grupos especializados según rasgos dominantes del carácter.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>2. Cada uno en su lugar</h3>
+        <p>La armonía social depende de que cada grupo cumpla su función específica (“justicia” platónica / lealtad a la facción).</p>
+      </div>
+      <div class="nodo comun">
+        <h3>3. Pruebas de aptitud</h3>
+        <p>Se evalúa la naturaleza o el rasgo principal para asignar (o confirmar) el lugar de cada persona.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>4. Prioridad del colectivo</h3>
+        <p>El bien de la ciudad/facción está por encima de la familia o la identidad individual.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>5. Peligro de los que no encajan</h3>
+        <p>Naturalezas mixtas (Platón) y Divergentes (Roth) amenazan la pureza y estabilidad del sistema.</p>
+      </div>
+      <div class="nodo comun">
+        <h3>6. Utopía que deriva en control</h3>
+        <p>Ambas proponen un orden ideal que, llevado al extremo, se vuelve rígido y opresivo.</p>
+      </div>
+    </div>
+
+    <!-- Columna Divergente -->
+    <div class="columna">
+      <div class="nodo divergente">
+        <h3>🎬 Divergente – 5 facciones</h3>
+        <p><strong>Erudición</strong> (inteligencia)<br>
+        <strong>Osadía</strong> (valentía)<br>
+        <strong>Abnegación</strong> (altruismo)<br>
+        <strong>Sinceridad</strong> (honestidad)<br>
+        <strong>Amistad</strong> (paz)</p>
+      </div>
+      <div class="nodo divergente">
+        <h3>🧪 Selección</h3>
+        <p>Prueba de aptitud a los 16 años + Ceremonia de Elección. Se puede cambiar de facción.</p>
+      </div>
+      <div class="nodo divergente">
+        <h3>⚖️ Armonía</h3>
+        <p>Cada facción cumple su rol. La lealtad a la facción mantiene el orden social.</p>
+      </div>
+      <div class="nodo divergente">
+        <h3>👑 Gobierno</h3>
+        <p>Inicialmente Abnegación (desinterés). Erudición aspira al poder a través del conocimiento.</p>
+      </div>
+      <div class="nodo divergente">
+        <h3>⚠️ Amenaza</h3>
+        <p>Los Divergentes (aptos para varias facciones) son vistos como peligrosos para el sistema.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="leyenda">
+    <h2>Notas aclaratorias</h2>
+    <ul>
+      <li>Platón divide en <strong>3 clases</strong> jerárquicas basadas en las partes del alma; *Divergente* crea <strong>5 facciones</strong> más horizontales, aunque con fuertes desigualdades de poder.</li>
+      <li>En Platón la asignación es más determinista (naturaleza); en *Divergente* hay un elemento de elección (aunque la presión social es enorme).</li>
+      <li>Ambas obras exploran cómo un sistema diseñado para la armonía puede convertirse en una distopía cuando se rigidiza o cuando un grupo busca dominar a los demás.</li>
+      <li>Fuentes académicas y de crítica cultural señalan explícitamente el paralelismo con el modelo platónico de estratificación por virtudes.</li>
+    </ul>
+  </div>
+</body>
+</html>

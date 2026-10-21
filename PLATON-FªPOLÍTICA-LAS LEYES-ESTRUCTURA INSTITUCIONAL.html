@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema político de Magnesia – Las Leyes de Platón (versión ampliada)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 12px 40px;
+    color: #1a202c;
+  }
+  h1 {
+    text-align: center;
+    color: #1a365d;
+    margin-bottom: 6px;
+    font-size: 1.65rem;
+  }
+  .subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .star-container {
+    position: relative;
+    width: 820px;
+    height: 820px;
+    max-width: 96vw;
+    max-height: 96vw;
+  }
+
+  /* Centro */
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(145deg, #1a365d, #2b6cb0);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 10px 28px rgba(26, 54, 93, 0.4);
+    z-index: 20;
+    border: 5px solid #ebf8ff;
+  }
+  .center h2 {
+    font-size: 1.08rem;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .center p {
+    font-size: 0.78rem;
+    opacity: 0.92;
+    line-height: 1.3;
+  }
+
+  /* Nodos */
+  .node {
+    position: absolute;
+    width: 148px;
+    background: white;
+    border-radius: 12px;
+    padding: 11px 10px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.11);
+    text-align: center;
+    border-top: 5px solid;
+    transition: transform 0.22s;
+    z-index: 10;
+  }
+  .node:hover {
+    transform: scale(1.07);
+    z-index: 30;
+  }
+  .node h3 {
+    font-size: 0.88rem;
+    margin-bottom: 5px;
+    color: #2d3748;
+    line-height: 1.2;
+  }
+  .node p {
+    font-size: 0.73rem;
+    color: #4a5568;
+    line-height: 1.32;
+  }
+
+  /* Colores */
+  .n1  { border-color: #c53030; } /* Consejo Nocturno */
+  .n2  { border-color: #2b6cb0; } /* Guardianes */
+  .n3  { border-color: #2f855a; } /* Consejo */
+  .n4  { border-color: #d69e2e; } /* Asamblea */
+  .n5  { border-color: #805ad5; } /* Magistrados */
+  .n6  { border-color: #dd6b20; } /* Tribunales */
+  .n7  { border-color: #319795; } /* Educación */
+  .n8  { border-color: #718096; } /* Auditores */
+  .n9  { border-color: #b83280; } /* 12 Tribus */
+  .n10 { border-color: #38a169; } /* Syssitia */
+  .n11 { border-color: #d69e2e; } /* Sacerdotes */
+
+  /* Posicionamiento radial aproximado (11 nodos) */
+  .n1  { top: 0%;   left: 50%; transform: translateX(-50%); }
+  .n2  { top: 8%;   right: 8%; }
+  .n3  { top: 28%;  right: 0%; }
+  .n4  { top: 52%;  right: 0%; }
+  .n5  { bottom: 18%; right: 8%; }
+  .n6  { bottom: 0%;  left: 50%; transform: translateX(-50%); }
+  .n7  { bottom: 18%; left: 8%; }
+  .n8  { top: 52%;  left: 0%; }
+  .n9  { top: 28%;  left: 0%; }
+  .n10 { top: 8%;   left: 8%; }
+  .n11 { top: 18%;  left: 50%; transform: translateX(-50%); } /* un poco más arriba del centro para equilibrar */
+
+  /* Ajuste fino para el nodo 11 (Sacerdotes) */
+  .n11 {
+    top: 14%;
+  }
+
+  .leyenda {
+    max-width: 820px;
+    margin-top: 40px;
+    background: white;
+    border-radius: 14px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  .leyenda h3 {
+    color: #1a365d;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  .leyenda ul {
+    padding-left: 20px;
+  }
+  .leyenda li {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 780px) {
+    .star-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .center {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-bottom: 8px;
+    }
+    .node {
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      transform: none !important;
+      width: 92%;
+      max-width: 340px;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Sistema político de Magnesia</h1>
+  <p class="subtitle">Las Leyes de Platón – Mapa conceptual ampliado (estrella de 11 puntas)</p>
+
+  <div class="star-container">
+    <!-- Centro -->
+    <div class="center">
+      <h2>Constitución<br>y Leyes<br>de Magnesia</h2>
+      <p>El conjunto de leyes escritas que constituye el alma de la polis y a la que todos deben someterse</p>
+    </div>
+
+    <!-- Nodos -->
+    <div class="node n1">
+      <h3>Consejo Nocturno<br>(de la Aurora)</h3>
+      <p>Órgano supremo de sabiduría. Vela por la comprensión profunda y la preservación de las leyes. Se reúne al alba.</p>
+    </div>
+
+    <div class="node n2">
+      <h3>Guardianes de las Leyes<br>(Nomophylakes)</h3>
+      <p>37 ciudadanos mayores (50-70 años). Supervisan el cumplimiento de las leyes y proponen mejoras.</p>
+    </div>
+
+    <div class="node n3">
+      <h3>Consejo<br>(Boulé)</h3>
+      <p>360 miembros (90 por cada clase de propiedad). Administra los asuntos cotidianos y prepara las asambleas.</p>
+    </div>
+
+    <div class="node n4">
+      <h3>Asamblea<br>de Ciudadanos</h3>
+      <p>Todos los ciudadanos con derecho (quienes han servido en el ejército). Elige a la mayoría de los magistrados.</p>
+    </div>
+
+    <div class="node n5">
+      <h3>Magistrados<br>y Oficiales</h3>
+      <p>Diversos cargos ejecutivos: generales, inspectores de mercados, de la ciudad, del campo, etc.</p>
+    </div>
+
+    <div class="node n6">
+      <h3>Tribunales<br>de Justicia</h3>
+      <p>Sistema judicial jerarquizado. Diferentes tribunales según la gravedad de los casos.</p>
+    </div>
+
+    <div class="node n7">
+      <h3>Autoridades<br>Educativas</h3>
+      <p>El Director de Educación es uno de los cargos más importantes. Controla la formación de los jóvenes.</p>
+    </div>
+
+    <div class="node n8">
+      <h3>Eutinos<br>(Auditores)</h3>
+      <p>Controlan y examinan la gestión de todos los magistrados al final de su mandato.</p>
+    </div>
+
+    <div class="node n9">
+      <h3>Las 12 Tribus</h3>
+      <p>División fundamental de los 5040 ciudadanos (420 por tribu). Base de la organización administrativa, militar y religiosa.</p>
+    </div>
+
+    <div class="node n10">
+      <h3>Syssitia<br>(Comidas comunes)</h3>
+      <p>Comidas colectivas obligatorias que fomentan la amistad cívica, la igualdad y el control social (inspiradas en Esparta y Creta).</p>
+    </div>
+
+    <div class="node n11">
+      <h3>Sacerdotes e<br>Instituciones religiosas</h3>
+      <p>Profundamente integradas en la vida política. Cada tribu tiene cultos propios; la religión es pilar del orden legal.</p>
+    </div>
+  </div>
+
+  <div class="leyenda">
+    <h3>Notas sobre el sistema ampliado</h3>
+    <ul>
+      <li>Es una <strong>constitución mixta</strong>: combina elementos democráticos (Asamblea), aristocráticos (Guardianes y Consejo Nocturno) y un fuerte respeto a la ley escrita.</li>
+      <li>El poder real reside en las <strong>leyes</strong>, no en las personas. Los gobernantes son “siervos de las leyes”.</li>
+      <li>Las <strong>12 tribus</strong> (cada una de 420 ciudadanos) son la estructura base que permite todas las subdivisiones administrativas, militares y religiosas.</li>
+      <li>Los <strong>syssitia</strong> (comidas comunes) son obligatorios y tienen una fuerte función educativa y de cohesión social.</li>
+      <li>La <strong>religión</strong> no es un ámbito separado: está entretejida con la política y la educación.</li>
+      <li>El <strong>Consejo Nocturno</strong> sigue siendo la institución más filosófica y el “ancla” de toda la ciudad.</li>
+    </ul>
+  </div>
+</body>
+</html>
